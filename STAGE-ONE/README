@@ -1,0 +1,38 @@
+Movie Recommendation System: Exploratory Data Analysis & Feature Engineering
+
+Project Overview
+This project focused on the critical data preparation and Exploratory Data Analysis (EDA) phase foR building a robust Movie Recommendation System. Using the MovieLens 100K dataset, I moved beyond a simple rating matrix to engineer sophisticated features that capture user behavior, item popularity, and temporal trends.
+
+Objectives
+Perform deep data cleaning and merging of multiple relational datasets (Movies, Ratings, Tags).
+Engineer new features to quantify and mitigate common recommendation system biases (e.g., user leniency and popularity bias).
+Analyze temporal drift to understand how user tastes evolve over time.
+Define a roadmap foR a prediction model including regularization strategies.
+
+Technical Workflow
+Data Wrangling: Merged ratings.csv and movies.csv on movieId.
+                Converted Unix timestamps into readable Datetime objects foR time-series analysis.
+                Handled missing values and ensured data consistency across 100,000+ records.
+
+Feature Engineering:
+User Metrics: Calculated user_avg_rating to identify "strict" vs. "lenient" raters.
+Item Metrics: Created popularity (rating count) and average_rating per movie.
+Temporal Features: Extracted release_year and rating_year to analyze the impact of movie age on ratings.
+Genre Analysis: Deconstructed pipe-separated genres to count multi-genre tags per movie.
+
+Exploratory Data Analysis (EDA):
+Visualized rating distributions using Matplotlib and Seaborn.
+Analyzed the "Long Tail" effect iN movie popularity.
+Compared average ratings of "New Movies" (2000+) vs. "Old Classics" (Pre-2000).
+
+Key Insights
+User Bias: A small group of highly active users tends to rate more critically than the average user, necessitating normalization.
+
+Content Popularity: 10% of movies account for nearly 50% of the total ratings, confirming the "popularity bias" that recommendation algorithms must balance.
+
+Temporal Drift: Average ratings show a slight decline over time, suggesting that older movies iN the dataset are often rated more favorably (survivorship bias).
+
+Tools & Libraries
+Python: Core programming language.
+Pandas & NumPy: For data manipulation and matrix operations.
+Matplotlib & Seaborn: For statistical data visualization.
