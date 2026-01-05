@@ -1,1 +1,33 @@
+Superstore Sales Performance Analysis (HNG Stage 0)
 
+Project Overview
+This project involves a comprehensive descriptive analysis of the "Superstore Sales" dataset. The primary goal was to explore retail data to identify key revenue drivers, customer behavior, and operational efficiency. By leveraging Microsoft Excel, I transformed raw transactional data into actionable business insights.
+
+Key Business Questions Addressed:
+Which product category and sub-category generate the most revenue?
+Who are the top 10 highest-spending customers?
+Which states are the most profitable for the business?
+What is the most preferred shipping method among customers?
+What is the total revenue generated across all global operations?
+
+Technical Workflow
+Data Cleaning:Handled missing values in sales and category entries.
+              Removed duplicate records to ensure data integrity.
+              Standardized numeric formats for financial calculation.
+
+Data Analysis:Utilized Pivot Tables to aggregate sales by region, category, and time.
+              Applied Excel formulas (SUMIFS, VLOOKUP, RANK) to identify top performers.
+
+Data Visualization:Created dynamic Bar Charts and Pie Charts to visualize market share across Technology, Furniture, and Office Supplies.
+
+Key Insights
+Top Performer: The Technology category leads sales, contributing 36.5% of total revenue, driven largely by Phones.
+
+Revenue Milestone: The business generated a total revenue of $2,265,425 USD.
+
+Customer Loyalty: Identified the top 10 customers responsible for significant portions of the total spend, providing a basis for targeted loyalty programs.
+
+Operational Trend: Identified the most frequently used shipping methods to help optimize logistics and supply chain costs.
+
+Tools Used
+Microsoft Excel: Data Cleaning, Pivot Tables, and Dashboarding.
