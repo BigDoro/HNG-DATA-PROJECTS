@@ -1,0 +1,41 @@
+HNG Ride-Sharing SQL Business Analysis (Stage 2)
+
+Project Overview
+This project involved a deep-dive business health audit of HNG Ride, a ride-sharing platform. 
+Using SQL, I analyzed large-scale relational databases containing information on riders, drivers, rides, and payments. 
+The goal was to evaluate operational efficiency, revenue growth, and rider retention between June 2021 and December 2024.
+
+Objectives
+Evaluate driver performance and identify top-tier earners for bonus eligibility.
+Analyze quarterly and yearly revenue trends to identify growth patterns.
+Measure rider retention and loyalty over a four-year period.
+Identify high-value routes by analyzing the longest completed trips.
+
+Technical Workflow (SQL Queries)
+Operational Performance:
+Joined rides, drivers, and riders tables to extract data on trip distances and pickup/drop-off locations.
+Filtered datasets to include only "Completed" rides with "Successful" payments to ensure data accuracy.
+
+Financial Analysis:
+Calculated Year-over-Year (YoY) and Quarter-over-Quarter (QoQ) revenue growth using aggregate functions.
+Identified the top 10 longest completed rides by distance.
+
+Driver Metrics & Bonus Logic:
+Created complex queries to filter drivers based on three criteria:
+  -Minimum of 30 completed rides.
+  -Static rating of 4.5 or higher.
+  -Cancellation rate lower than 5%.
+
+Customer Retention:
+Analyzed rider behavior to determine the percentage of repeat customers vs. one-time users.
+
+Key Insights
+Revenue Growth: The platform showed consistent revenue expansion, with specific quarters showing sharp peaks due to increased rider engagement.
+
+Driver Efficiency: Out of the entire fleet, only a select few (e.g., Driver 1005 and 1181) met the high-performance criteria for the management bonus, highlighting a need for driver optimization.
+
+Service Standards: Maintained strong rider loyalty through high service standards, as evidenced by consistent ratings among the top-performing drivers.
+
+Tools Used
+SQL: For data extraction, joining tables, and complex business logic.
+Database Environment: PostgreSQL.
