@@ -1,0 +1,41 @@
+Lagos State Election Outlier & Geospatial Anomaly Detection (Stage 3)
+
+Project Overview
+This project applies a sophisticated, two-layered anomaly detection approach to the 2023 Lagos State Presidential Election data. 
+By combining statistical machine learning with geospatial analysis, I identified polling units (PUs) whose results deviated significantly from both statewide trends and local neighborhood patterns.
+
+Objectives
+Detect extreme outliers in voting patterns across 11,911 polling units in Lagos State.
+Quantify deviations in voter turnout and party performance (specifically for the Labour Party - LP).
+Use geospatial clustering to see if a polling unit’s results are "statistically impossible" compared to its immediate neighbors.
+Provide a framework for identifying potential data entry errors or irregular vote tallies.
+
+Technical Workflow
+Data Preparation & Geocoding:
+Processed the Lagos State election dataset containing 11,911 records.
+Utilized the Nominatim Geocoder to obtain precise Latitude and Longitude coordinates for various LGAs.
+
+Feature Engineering:
+Voter Turnout: Calculated as (Accredited Voters / Registered Voters) × 100.
+Party Performance Index (PPI): Created a metric to compare individual PU performance against the state average.
+
+Anomaly Detection Layer 1: Isolation Forest:
+Implemented the Isolation Forest Algorithm (Scikit-learn) to isolate outliers in a multi-dimensional space (Turnout, Latitude, Longitude, and PPI).
+Set a contamination parameter of 0.05 to identify the top 5% most anomalous units.
+
+Anomaly Detection Layer 2: Geospatial Deviation (Ball Tree):
+Used the Ball Tree Algorithm to identify the "nearest neighbor" polling units.
+Calculated a Geospatial Outlier Score by comparing a unit result to the mean result of its 10 closest geographical neighbors.
+
+Key Insights
+Statistically Significant Deviations: Identified several polling units with nearly 100% turnout or 0% votes for major parties, which contradicted the trends of all surrounding units.
+
+Regional Trends: The analysis revealed that certain LGAs had higher clusters of anomalies, suggesting regional data quality issues or unique local voting dynamics.
+
+Validation Tool: Demonstrated how data science can be used as an auditing tool to flag specific records for manual verification (e.g., checking Form EC8A).
+
+Tools Used
+Python: Data processing and modeling.
+Scikit-learn: Isolation Forest and Ball Tree algorithms.
+Pandas & NumPy: For complex data transformation.
+Geopy / Nominatim: For geospatial coordinate mapping.
