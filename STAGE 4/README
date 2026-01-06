@@ -1,0 +1,45 @@
+SEO & Keyword Analytics: Nigerian Consumer Banking (Stage 4)
+
+Project Overview
+This project provides a data-driven analysis of the digital footprint and SEO (Search Engine Optimization) strategies of the top 15 Nigerian banks. 
+By analyzing search volumes, keyword difficulty, and paid competition, I evaluated how financial institutions leverage online visibility to drive customer acquisition for core services like loans and account opening.
+
+Objectives
+Identify the dominant players in the Nigerian banking digital landscape.
+Categorize thousands of keywords into functional business groups (e.g., Loans & Credit,Digital Banking).
+Analyze the correlation between SEO "Keyword Difficulty" and business value (CPC/PPC).
+Visualize growth trends to identify mid-tier banks gaining significant search momentum.
+
+Technical Workflow
+Data Acquisition:
+Extracted keyword data using Google Ads Keyword Planner and Mangools Keyword Finder.
+Gathered metrics including Average Monthly Search Volume, Cost Per Click (CPC), and Keyword Difficulty (KD).
+
+Data Cleaning & Categorization (Excel):
+Standardized bank names and removed duplicate keyword entries.
+Used string matching to group keywords into 8 strategic categories: Loans & Credit, Online Banking, Account Opening, Bank Codes, Branch/ATM Locations, etc.
+
+Data Visualization (Power BI):
+Imported the cleaned dataset into Power BI for advanced modeling.
+
+Built an interactive dashboard featuring:
+
+Market Share Analysis: Ranking banks by total search volume (Zenith Bank leading).
+
+Difficulty vs. Payoff: A matrix comparing keyword difficulty against Paid Competition (PPC).
+
+Growth Analytics: Identifying banks with the highest "Interest Growth Rate" (e.g., Wema, Keystone).
+
+Key Insights
+Market Dominance: Zenith Bank, First Bank, and Access Bank control the majority of the search market share.
+
+High-Value Competition: The most expensive keywords (highest PPC) are "Account Opening" and "Loans," proving these are the primary drivers for digital revenue.
+
+The "Digital Shift": Keywords related to "Internet Banking" and "Mobile Apps" have the highest difficulty scores, reflecting the intense competition in the Fintech space.
+
+Emerging Players: Mid-tier banks like Wema Bank are showing rapid growth in search interest, likely due to successful digital-first branding (e.g., ALAT).
+
+Tools Used
+SEO Tools: Google Keyword Planner, Mangools.
+Data Cleaning: Microsoft Excel (Pivot Tables & Data Formatting).
+Data Visualization: Power BI (DAX, Interactive Reporting).
